@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+    display:flex;
+    align-items: center;  /* elemanları dikey olarak hizalar.*/
+    justify-content: center; /*elemanları yatay olarak hizalar.*/
+}
+
+#counter{
+    margin: 50px;
+    float:left; 
+} 
+

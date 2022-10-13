@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta  charset="utf-8">
+        <meta name="description" content="Javascript ile counter uygulaması yapımı">
+        <meta name="keywords" content="HTMl5 CSS3 JAVASCRİPT">
+        <title>Counter Uygulaması</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body> 
+        <h1 id="cap">COUNTER APP</h1> 
+        <p class="counter" id="counter">0</p> 
+        <button class="incr">+</button>
+        <button class="decr">-</button> 
+        <button class="incr5">+5</button>
+        <button class="decr5">-5</button> 
+        <script>  
+
+        let counter=document.getElementById("counter");
+        let incr= document.querySelector(".incr");
+        let decr= document.querySelector(".decr"); 
+        let incr5=document.querySelector(".incr5");
+        let decr5=document.querySelector(".decr5")
+
+        let count=0;
+
+        incr.addEventListener("click", () => {
+            
+            count++;
+            terrible();
+
+        })
+        
+        decr.addEventListener("click", () => {
+
+            count --; 
+            terrible(); 
+        });
+
+        incr5.addEventListener("click", () => {
+             
+            count ++;
+            count ++;
+            count ++;
+            count ++; 
+            count ++; 
+            terrible();
+
+        })
+        
+        decr5.addEventListener("click", () => {
+
+              
+            count --;
+            count --;
+            count --;
+            count --;
+            count --;
+            terrible(); 
+        });
+         
+        function terrible()
+        {
+            counter.innerHTML= count; 
+        }; 
+            
+        </script> 
+    </body> 
+</html>  
